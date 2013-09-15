@@ -1,6 +1,6 @@
 @import "bootstrap";
-@import "bootstrap-responsive";
 
+$background-gray: #FAFAFA;
 /* universal */
 
 html {
@@ -8,9 +8,11 @@ html {
 }
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
+	background-color: $background-gray;
+	padding: 100px 10px 20px 10px;
 }
+
+@import "bootstrap-responsive";
 
 section {
   overflow: auto;
@@ -20,12 +22,17 @@ textarea {
   resize: vertical;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
 
-.center h1 {
+.text-center h1 {
   margin-bottom: 10px;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* header */
@@ -37,4 +44,35 @@ textarea {
 
 .navbar .nav > li > a {
 	padding: 20px 15px 20px;
+}
+
+/* footer */
+
+footer {
+	margin-top: 20px;
+	padding-top: 5px;
+}
+
+/* carousel */
+#myCarousel {
+	height: auto;
+	width: 550px;
+	max-width: 550px;
+}
+
+.carousel-inner img {
+	height: 450px;
+	width: 550px;
+}
+
+/* content */
+
+.content {
+	padding-top: 30px;
+	background-color: #fff;
+}
+
+.content .content-header {
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 50px;
 }

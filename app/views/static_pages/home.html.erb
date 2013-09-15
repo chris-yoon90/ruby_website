@@ -1,3 +1,51 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-<button type="button" class="btn btn-default">Left</button>
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $('#myCarousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+<div class="span2">
+</div>
+
+<div class="span8 hero-unit content">
+<h1 class="content-header">Home</h1>
+
+<div id="myCarousel" class="carousel slide centered">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+  	<div class="active item">
+    	<img src="/assets/sentiment_analysis_img.jpg" >
+    	<div class="carousel-caption">
+    		<h4>Sentiment Analysis mashup</h4>
+    		<p>A Web application to analyze reddit and twitter posts based on their sentiment.</p>
+    	</div>
+    </div>
+    <div class="item">
+    	<img src="/assets/landingalgorithm.png" >
+    	<div class="carousel-caption">
+    		<h4>High Altitude GPS Glider</h4>
+    		<p>A self-guiding autonomous GPS glider for BLAST high altitude telescope project.</p>
+    	</div>
+    </div>
+    <div class="item">
+    	<img src="/assets/sherman.jpg" >
+    	<div class="carousel-caption">
+    		<h4>2010 Engineering Physics Robotics Competition: RoboRacers</h4>
+    		<p>A tape-following autonomous racing robot. This was a collaboration work with three other team members. </p>
+    	</div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+</div>
+
+<div class="span2">
+</div>

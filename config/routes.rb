@@ -1,6 +1,5 @@
 RubyWebsite::Application.routes.draw do
   root 'static_pages#home'
-  match '/help', to: 'static_pages#help', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/project', to: 'static_pages#project', via: 'get'
   match '/resume', to: 'static_pages#resume', via: 'get'
