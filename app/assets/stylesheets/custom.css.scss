@@ -1,6 +1,8 @@
 @import "bootstrap";
 
 $background-gray: #FAFAFA;
+$black: #000;
+$white: #FFF;
 /* universal */
 
 html {
@@ -9,10 +11,8 @@ html {
 
 body {
 	background-color: $background-gray;
-	padding: 100px 10px 20px 10px;
+	padding: 60px 20px 40px 20px;
 }
-
-@import "bootstrap-responsive";
 
 section {
   overflow: auto;
@@ -20,6 +20,10 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+img {
+	margin: 20px;
 }
 
 .text-center {
@@ -31,6 +35,7 @@ textarea {
 }
 
 .centered {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
@@ -38,55 +43,56 @@ textarea {
 
 /* header */
 
-.navbar .brand:hover {
-	color: #000;
+.navbar .navbar-brand:hover {
+	color: $white;
 	text-decoration: none;
-}
-
-.navbar .nav > li > a {
-	padding: 20px 15px 20px;
 }
 
 /* footer */
 
 footer {
+	border-top: 1px solid #D8D8D8;
 	margin-top: 20px;
-	padding-top: 5px;
+	padding-top: 30px;
+	margin-top: 40px;
 }
 
-/* carousel */
-#myCarousel {
-	height: auto;
-	width: 550px;
-	max-width: 550px;
+/* main page */
+#main-content {
+	padding-top: 140px;
+	padding-bottom: 140px;
 }
 
-.carousel-inner img {
-	height: 450px;
-	width: 550px;
+#main-content h1 {
+	font-size: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.carousel-caption p {
-	font-size: 14px;
+#main-content p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.quote {
+	font-size: 30px;
+	margin-right: 20%;
+}
+
+.quote span {
 	font-style: italic;
+	font-size: 23px;
+	margin-left: 55%;
 }
 
-.carousel-caption a {
-	color: $white;
+/* about page */
+
+.text-wrap {
+	float: left;
+	margin: 20px 20px 20px 0px;
 }
 
-#myProjectList a {
-	color: $black;
-}
-
-#myProjectList p {
-	font-size: 16px;
-	font-style: italic;
-}
-
-/* content */
-
-.hero-unit-white {
+.jumbotron-white {
 	padding-top: 30px;
 	/*padding-left: 10px;
 	padding-right: 10px;*/
@@ -94,7 +100,7 @@ footer {
 	/*width: 600px;*/
 }
 
-.hero-unit-white .header {
+.jumbotron-white .header {
 	border-bottom: 1px solid #eaeaea;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
