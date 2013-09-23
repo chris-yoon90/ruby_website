@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-$background-gray: #FAFAFA;
+$background-gray: #F2F2F2;
 $black: #000;
 $white: #FFF;
 /* universal */
@@ -28,10 +28,10 @@ img {
 
 .text-center {
   text-align: center;
-}
 
-.text-center h1 {
-  margin-bottom: 10px;
+  h1 {
+  	margin-bottom: 10px;
+  }
 }
 
 .centered {
@@ -59,30 +59,32 @@ footer {
 
 /* main page */
 #main-content {
+	font-family: Helvetica;
 	padding-top: 140px;
 	padding-bottom: 140px;
-}
+	color: #6E6E6E;
+	h1 {
+		font-family: Helvetica;
+		font-size: 80px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
 
-#main-content h1 {
-	font-size: 80px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-#main-content p {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	p {
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
 }
 
 .quote {
-	font-size: 30px;
+	font-size: 26px;
 	margin-right: 20%;
-}
-
-.quote span {
-	font-style: italic;
-	font-size: 23px;
-	margin-left: 55%;
+	color: #848484;
+	span {
+		font-style: italic;
+		font-size: 23px;
+		margin-left: 55%;
+	}
 }
 
 /* about page */
@@ -93,14 +95,13 @@ footer {
 }
 
 .jumbotron-white {
-	padding-top: 30px;
-	/*padding-left: 10px;
-	padding-right: 10px;*/
-	background-color: #fff;
-	/*width: 600px;*/
-}
+	@extend .jumbotron;
 
-.jumbotron-white .header {
-	border-bottom: 1px solid #eaeaea;
-	margin-bottom: 30px;
+	padding-top: 30px;
+	background-color: $white;
+
+	.header {
+		border-bottom: 1px solid #eaeaea;
+		margin-bottom: 30px;
+	}
 }
