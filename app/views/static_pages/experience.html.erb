@@ -1,31 +1,39 @@
 
   <div class="row">
     <div class="col-md-3">
-    <nav id="side-nav">
-      <ul class="nav nav-pills nav-stacked affix">
-        <li class="active"><a href="#one">One</a></li>
-        <li><a href="#two">Two</a></li>
-        <li><a href="#three">Three</a></li>
-        <li><a href="#four">Four</a></li>
-        <li><a href="#five">Five</a></li>
-      </ul>
-      </nav>
-    </div>
-    <div class="col-md-9 content">
-      <div class="row">
-           <h2 class="anchor" id="one"> Section 1 </h2>
-      </div>
-      <div class="row">
-           <h2 class="anchor" id="two"> Section 2 </h2>
-      </div>
-      <div class="row">
-           <h2 class="anchor" id="three">Section 3</h2>
-      </div>
-      <div class="row">
-         <h2 class="anchor" id="four">Section 4</h2>
-      </div>
-      <div class="row">
-        <h2 class="anchor" id="five">Section 5</h2>
+      <div id="side-nav" class="sidebar affix">
+        <h2>Projects</h2>
+        <ul class="nav sidenav">
+          <li><%= link_to "Crawljax", "#crawljax" %></li>
+          <li><%= link_to "Sentiment Analysis Mashup", "#sentiment" %></li>
+          <li><%= link_to "Address Book Web Application", "#addressbook" %></li>
+          <li><%= link_to "High Altitude GPS Glider", "#gpsglider" %></li>
+          <li><%= link_to "Roboracer", "#roboracer" %></li>
+        </ul>
       </div>
     </div>
+    <div class="col-md-9">
+      <div class="jumbotron-white">
+        <h1>Current Project</h1>
+        <h2>What makes Vancouverites sad?</h2>
+         <%= link_to "Go to Smart City Project", "#", class: "btn btn-lg btn-primary" %>
+      </div>
+      <div class="jumbotron-white">
+        <div class="project-content">
+           <h2 class="anchor" id="crawljax"> Crawljax </h2>
+        </div>
+        <div class="project-content">
+          <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
+        </div>
+        <div class="project-content">
+          <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
+        </div>
+        <div class="project-content">
+          <h2 class="anchor" id="gpsglider">High Altitude GPS Glider</h2>
+        </div>
+        <div class="project-content">
+          <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
+        </div>
+    </div>
+  </div>
   </div>

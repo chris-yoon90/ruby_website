@@ -23,7 +23,7 @@ textarea {
 }
 
 img {
-	margin: 20px;
+	margin: 5px;
 }
 
 .text-center {
@@ -107,17 +107,51 @@ footer {
 	}
 }
 
+.self-photo {
+	padding: 15px;
+}
+
 /* Experience page */
 
-.content .row {
-  background-color: pink;
-  margin-bottom:50px;
+.project-content{
+	padding: 20px;
+  	background-color: pink;
+  	margin-bottom:50px;
     height:750px;
 }
 
-#side-nav .affix {
+.sidebar {
+	padding: 10px;
+}
+
+.sidebar.affix {
 	position: fixed;
-	top: 170px;
+	top: 60px;
+	width: 280px;
+}
+
+.sidebar .nav > li > a {
+	display: block;
+	color: #6E6E6E;
+	padding: {
+		top: 5px;
+		right: 20px;
+	}
+}
+
+.sidebar .nav > .active > a, 
+.sidebar .nav > .active:hover > a, 
+.sidebar .nav > .active:focus > a {
+	font-weight: bold;
+	color: blue;
+	background-color: transparent;
+	border-right: 1px solid black;
+}
+
+.sidenav {
+	background-color: #E6E6E6;
+	border-radius: 7px;
+	margin-top: 30px;
 }
 
 .anchor {
