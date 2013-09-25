@@ -48,6 +48,7 @@ img {
 	text-decoration: none;
 }
 
+
 /* footer */
 
 footer {
@@ -104,4 +105,22 @@ footer {
 		border-bottom: 1px solid #eaeaea;
 		margin-bottom: 30px;
 	}
+}
+
+/* Experience page */
+
+.content .row {
+  background-color: pink;
+  margin-bottom:50px;
+    height:750px;
+}
+
+#side-nav .affix {
+	position: fixed;
+	top: 170px;
+}
+
+.anchor {
+	padding-top: 80px;
+	margin-top: -45px;
 }
