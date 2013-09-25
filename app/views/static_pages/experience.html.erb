@@ -1,7 +1,19 @@
+ <script type="text/javascript">
+ $('#side-nav').affix({offset: { top: 300 }});
+ </script>
+
+ <div class="row"> 
+    <div class="jumbotron-white">
+        <h1>Current Project</h1>
+        <h2>What makes Vancouverites sad?</h2>
+         <%= link_to "Go to Smart City Project", "#", class: "btn btn-lg btn-primary" %>
+    </div>
+</div>
+  
 
   <div class="row">
     <div class="col-md-3">
-      <div id="side-nav" class="sidebar affix">
+      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="300">
         <h2>Projects</h2>
         <ul class="nav sidenav">
           <li><%= link_to "Crawljax", "#crawljax" %></li>
@@ -14,25 +26,28 @@
     </div>
     <div class="col-md-9">
       <div class="jumbotron-white">
-        <h1>Current Project</h1>
-        <h2>What makes Vancouverites sad?</h2>
-         <%= link_to "Go to Smart City Project", "#", class: "btn btn-lg btn-primary" %>
-      </div>
-      <div class="jumbotron-white">
         <div class="project-content">
-           <h2 class="anchor" id="crawljax"> Crawljax </h2>
+          <div class="section-header">
+            <h2 class="anchor" id="crawljax"> Crawljax </h2>
+          </div>
         </div>
         <div class="project-content">
-          <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
+          <div class="section-header">
+            <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
+          </div>
         </div>
         <div class="project-content">
-          <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
+          <div class="section-header">
+            <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
+          </div>
         </div>
         <div class="project-content">
           <h2 class="anchor" id="gpsglider">High Altitude GPS Glider</h2>
         </div>
         <div class="project-content">
-          <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
+          <div class="section-header">
+            <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
+          </div>
         </div>
     </div>
   </div>

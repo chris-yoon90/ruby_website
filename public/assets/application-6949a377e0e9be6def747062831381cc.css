@@ -3527,7 +3527,7 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px; }
 
-.jumbotron {
+.jumbotron, .jumbotron-white {
   padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
@@ -3535,21 +3535,21 @@ a.list-group-item.active > .badge,
   line-height: 2.14286;
   color: inherit;
   background-color: #eeeeee; }
-  .jumbotron h1 {
+  .jumbotron h1, .jumbotron-white h1 {
     line-height: 1;
     color: inherit; }
-  .jumbotron p {
+  .jumbotron p, .jumbotron-white p {
     line-height: 1.4; }
-  .container .jumbotron {
+  .container .jumbotron, .container .jumbotron-white {
     border-radius: 6px; }
   @media screen and (min-width: 768px) {
-    .jumbotron {
+    .jumbotron, .jumbotron-white {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron {
+      .container .jumbotron, .container .jumbotron-white {
         padding-left: 60px;
         padding-right: 60px; }
-      .jumbotron h1 {
+      .jumbotron h1, .jumbotron-white h1 {
         font-size: 63px; } }
 
 .thumbnail {
@@ -4916,7 +4916,7 @@ html {
   overflow-y: scroll; }
 
 body {
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   padding: 60px 20px 40px 20px; }
 
 section {
@@ -4926,19 +4926,23 @@ textarea {
   resize: vertical; }
 
 img {
-  margin: 20px; }
+  margin: 5px; }
 
 .text-center {
   text-align: center; }
-
-.text-center h1 {
-  margin-bottom: 10px; }
+  .text-center h1 {
+    margin-bottom: 10px; }
 
 .centered {
   display: block;
   margin-left: auto;
   margin-right: auto;
   float: none; }
+
+.section-header {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+  margin-bottom: 30px; }
 
 /* header */
 .navbar .navbar-brand:hover {
@@ -4954,26 +4958,27 @@ footer {
 
 /* main page */
 #main-content {
+  font-family: Helvetica;
   padding-top: 140px;
-  padding-bottom: 140px; }
-
-#main-content h1 {
-  font-size: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-#main-content p {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  padding-bottom: 140px;
+  color: #6E6E6E; }
+  #main-content h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  #main-content p {
+    margin-top: 5px;
+    margin-bottom: 20px; }
 
 .quote {
-  font-size: 30px;
-  margin-right: 20%; }
-
-.quote span {
-  font-style: italic;
-  font-size: 23px;
-  margin-left: 55%; }
+  font-size: 26px;
+  margin-right: 20%;
+  color: #848484; }
+  .quote span {
+    font-style: italic;
+    font-size: 23px;
+    margin-left: 55%; }
 
 /* about page */
 .text-wrap {
@@ -4982,11 +4987,50 @@ footer {
 
 .jumbotron-white {
   padding-top: 30px;
-  /*padding-left: 10px;
-  padding-right: 10px;*/
-  background-color: #fff;
-  /*width: 600px;*/ }
+  background-color: white; }
 
-.jumbotron-white .header {
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 30px; }
+.self-photo {
+  padding: 15px; }
+
+/* Experience page */
+.project-content {
+  padding: 20px;
+  background-color: pink;
+  margin-bottom: 50px;
+  height: 750px; }
+
+.sidebar {
+  padding: 10px;
+  width: 280px; }
+
+.sidebar.affix {
+  position: fixed;
+  top: 60px; }
+
+.sidebar.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px; }
+
+.sidebar .nav > li > a {
+  display: block;
+  color: #6E6E6E;
+  padding-top: 5px;
+  padding-right: 20px; }
+
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: blue;
+  background-color: transparent;
+  border-right: 1px solid black; }
+
+.sidenav {
+  background-color: #E6E6E6;
+  border-radius: 7px;
+  margin-top: 30px; }
+
+.anchor {
+  padding-top: 80px;
+  margin-top: -45px; }
