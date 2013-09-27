@@ -1,6 +1,6 @@
  <div class="row"> 
     <div class="jumbotron-white">
-        <h1>Current Project</h1>
+        <h1 class="large-heading">Current Project</h1>
         <h2>What makes Vancouverites sad?</h2>
          <%= link_to "Go to Smart City Project", "#", class: "btn btn-lg btn-primary" %>
     </div>
@@ -24,7 +24,7 @@
         <div class="project-content">
             <div class="section-header">
                 <h2 class="anchor" id="crawljax"> Crawljax </h2>
-                <small>
+                <small class="links">
                     <%= link_to "Link to project", "http://crawljax.com/", target: "_blank" %>
                 </small>
             </div>
@@ -33,17 +33,19 @@
             </p>
             <p>
                 As my final project for a Software Engineering course in UBC, I've contribute to the project with a team of four fellow students. Using agile development practices such as TDD, user stories and sprint planning, we've successfully fixed two issues:
+            </p>
                 <ul>
                     <li><%= link_to "Issue #135: ", "https://github.com/crawljax/crawljax/issues/135", target: "_blank" %> Improving Crawl configurations with clever XPath manipulation. </li>
                     <li><%= link_to "Issue #151: ", "https://github.com/crawljax/crawljax/issues/151", target: "_blank" %>Refactor two similar classes into one single class.</li>
                 </ul>
+            <p>
                 Our Pull Request for Issue #135 has been merged to master but unfortunately for Issue #151, someone else submitted a pull request before us and ours did not get accepted.
             </p>   
         </div>
         <div class="project-content">
           <div class="section-header">
             <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
-            <small>
+            <small class="links">
                 <%= link_to "Link to code", "https://github.com/chris-yoon90/sentiment_analysis"%>
             </small>
           </div>
@@ -62,18 +64,22 @@
         <div class="project-content">
           <div class="section-header">
             <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
-            <small> 
+            <small class="links"> 
                 <%= link_to "Link to code", "https://github.com/chris-yoon90/Addressbook", target: "_blank" %>
             </small>
           </div>
           <%= image_tag "addressbook.JPG", size: "600x450"%>
           <p>
+            Addressbook application lets users manage their contact info. This was my first personal project to learn web development, so the overall code quality is not amazing, but it helped me to learn about REST APIs and MVC architecture. I've done some experimenting with design patterns with this project, and I was able to implement Observer pattern to Model and View classes.
+          </p>
+          <p>
+            My initial goal was to make this a CRUD (Create/Read/Update/Delete) app, but I was only able to implement Create, Read and Delete part. There is no plan to implement Update functionality since I can re-make this application with Ruby on Rails much faster than re-learning what I've written in PHP months ago.
           </p>
         </div>
         <div class="project-content">
             <div class="section-header">
-                <h2 class="anchor" id="gpsglider">High Altitude GPS Glider</h2>
-                <small> 
+                <h2 class="anchor" id="gpsglider">BLAST: High Altitude GPS Glider</h2>
+                <small class="links"> 
                     <%= link_to "Link to project detail", "http://projectlab.engphys.ubc.ca/wp-content/uploads/1205-ENPH459-Presentation-v1.pdf", target: "_blank"%> |
                     <%= link_to "Link to project report", "https://www.dropbox.com/s/0htnd9r5jcel1sh/Group1205_FinalReport.pdf", target: "_blank" %> |
                     <%= link_to "Link to presentation video", "https://www.dropbox.com/s/bslrmkymrcrmbio/1205%20Video_1.wmv", target: "_blank" %>
@@ -81,19 +87,22 @@
             </div>
             <%= image_tag "landingalgorithm.png", size: "500x450"%>
             <p>
-
+                A self-guiding autonomous GPS glider for BLAST high altitude telescope project. The glider has ISM300F2-C4.1 GPS Module from Inventek Systems attached to a custom built circuit board, which feeds GPS information to the FEZ Mini Microcontroller.  
+            </p>
+            <p>
+                BLAST is a telescope used to gather data on the early history of the universe. The telescope is attached to a weather balloon and sent up to the stratosphere (40km altitude) in Antarctica to avoid any noise or light interference. However during thier third flight, its parahute failed to detach after landing, and the Antarctic wind dragged the telescope over 200 km. The telescope was mostly destroyed and valuable data was lost. To address this issue, 
             </p>
         </div>
         <div class="project-content">
           <div class="section-header">
             <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
-            <small><%= link_to "Link to project", "http://shermanthetank.blogspot.ca/", target: "_blank"%> |
+            <small class="links"><%= link_to "Link to project", "http://shermanthetank.blogspot.ca/", target: "_blank"%> |
                 <%= link_to "Link to the video of final round", "http://www.youtube.com/watch?feature=player_embedded&v=Wrp9FB19lBI", target: "_blank" %>
             </small>
           </div>
           <%= image_tag "sherman.jpg", size: "570x450"%>
           <p>
-              
+              A tape-following autonomous racing robot. This was a collaboration work with three other team members. 
           </p>
         </div>
     </div>
