@@ -12,6 +12,7 @@ html {
 body {
 	background-color: $background-gray;
 	padding: 60px 20px 40px 20px;
+	font-family: Helvetica;
 }
 
 section {
@@ -24,6 +25,10 @@ textarea {
 
 img {
 	margin: 5px;
+}
+
+figure {
+	text-align: center;
 }
 
 .text-center {
@@ -41,6 +46,22 @@ img {
 	float: none;
 }
 
+.medium-margin {
+	margin:20px;
+}
+
+.large-margin {
+	margin:30px;
+}
+
+.small-padding {
+	padding: 10px;
+}
+
+.medium-padding {
+	padding: 20px;
+}
+
 .section-header {
 	border-bottom: 1px solid #eaeaea;
 	padding-bottom: 10px;
@@ -49,6 +70,30 @@ img {
 
 .large-heading {
 	font-size: 45px;
+}
+
+.medium-heading {
+	font-size: 30px;
+}
+
+.small-heading {
+	font-size: 20px;
+}
+
+.extra-small-text {
+	font-size: 12px;
+}
+
+.small-text {
+	font-size: 16px;
+}
+
+.medium-text {
+	font-size: 20px;
+}
+
+.large-text {
+	font-size: 25px;
 }
 
 /* header */
@@ -63,8 +108,8 @@ img {
 
 footer {
 	border-top: 1px solid #D8D8D8;
-	margin-top: 20px;
 	padding-top: 30px;
+	padding-bottom: 40px;
 	margin-top: 40px;
 }
 
@@ -107,7 +152,10 @@ footer {
 
 .jumbotron-white {
 	margin: 10px;
-	padding: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 	background-color: $white;
 	border-radius: 10px;
 }
@@ -122,15 +170,11 @@ footer {
 	padding: 20px;
   	margin-bottom:50px;
   	font-family: Helvetica;
-
-  	p, ul {
-  		font-family: Helvetica;
-  		font-size: 16px;
-  	}
 }
 
 .links {
-	font-size: 16px;
+	font-size: 14px;
+	text-align: right;
 }
 
 .sidebar {
