@@ -1,0 +1,134 @@
+ <div class="row"> 
+  <div class="col-md-12">
+    <div class="jumbotron-white">
+      <div class="section-header">
+        <h1 class="medium-heading">Current Project</h1>
+      </div>
+        <figure class="pull-right">
+          <%= image_tag "vancouver.jpg", size: "400x250", class: "small-padding" %>
+          <figcaption class="extra-small-text">Vancouver Science World</figcaption>
+        </figure>
+        <p class="medium-text">
+          What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
+        </p>
+        <p class="medium-text">
+          To find out, a team of Engineering Physics students in UBC will build an application that can find compelling relationships between Twitter tweet sentiment and various city-data. 
+        </p>
+        <p class="medium-text">
+          This project is sponsored by UBC MAGIC Lab as part of their smart city projects.
+        </p>
+        <p class="large-margin">
+         <%= link_to "Go to Smart City Project", "https://github.com/ubc-magic", class: "btn btn-lg btn-primary", target: "_blank" %>
+         </p>
+    </div>
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="500">
+        <h2>Past Projects</h2>
+        <ul class="nav sidenav">
+          <li><%= link_to "Crawljax", "#crawljax" %></li>
+          <li><%= link_to "Sentiment Analysis Mashup", "#sentiment" %></li>
+          <li><%= link_to "Address Book Web Application", "#addressbook" %></li>
+          <li><%= link_to "High Altitude GPS Glider", "#gpsglider" %></li>
+          <li><%= link_to "Roboracer", "#roboracer" %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="jumbotron-white">
+        <div class="project-content">
+            <div class="section-header">
+                <h2 class="anchor" id="crawljax"> Crawljax </h2>
+                <small class="links">
+                    <%= link_to "Link to project", "http://crawljax.com/", target: "_blank" %>
+                </small>
+            </div>
+            <p class= "small-text"> 
+            Craljax is an open source, web-crawling tool written in Java for crawling and testing modern web applications. It creates a state-flow diagram of the DOM states and the events that causes the transitions between the states. 
+            </p>
+            <p class="small-text">
+                As my final project for a Software Engineering course in UBC, I've contribute to the project with a team of four fellow students. Using agile development practices such as TDD, user stories and sprint planning, we've successfully fixed two issues:
+            </p>
+                <ul class="small-text">
+                    <li><%= link_to "Issue #135: ", "https://github.com/crawljax/crawljax/issues/135", target: "_blank" %> Convert some configurations to Xpath. </li>
+                    <li><%= link_to "Issue #151: ", "https://github.com/crawljax/crawljax/issues/151", target: "_blank" %>CrawlElement and TagElement should be refactored to one class.</li>
+                </ul>
+            <p class="small-text">
+                Our Pull Request for Issue #135 has been merged to master but unfortunately for Issue #151, someone else submitted a pull request before us and ours did not get accepted.
+            </p>   
+        </div>
+        <div class="project-content">
+          <div class="section-header">
+            <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
+            <small class="links">
+                <%= link_to "Link to code", "https://github.com/chris-yoon90/sentiment_analysis", target: "_blank"%>
+            </small>
+          </div>
+          <%= image_tag("sentiment_analysis_img.jpg", size: "600x450", class: "medium-padding centered")%>
+          <p class="small-text">
+            This is a quick mashup application I've made with <%= link_to "colinmleung", "https://github.com/colinmleung", target: "_blank"%> to analyze reddit and twitter posts based on their sentiment. For example, a user can type in a keyword to a search box and the application will return the first nine results from Reddit or Twitter relating to the keyword. But that's not all. The web application is hooked up to a sentiment analysis API that can analyze the content and give it a score based on their sentiment.
+          </p>
+          <p class="small-text">
+            The application used to work for both Reddit and Twitter, but after Twitter's API change to v1.1, it will not work anymore because Twitter API needs: <%= link_to '"every request to the API to be authenticated"', "https://dev.twitter.com/blog/changes-coming-to-twitter-api", target: "_blank"%> (dated August, 2012). However, the application should still work with Reddit.
+          </p>
+          <p class="small-text">
+            I've attempted, a few months back, to re-write this application in Ruby on Rails and improve the UI design but I've been busy with work, school and other projects. Hopefully, I'll get to work on it sometime later. If you are interested, here's a link to the new code using Rails 3: <%= link_to "New_sentiment_analysis", "https://github.com/chris-yoon90/new_sentiment_analysis", target: "_blank" %>
+          </p>
+
+        </div>
+        <div class="project-content">
+          <div class="section-header">
+            <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
+            <small class="links"> 
+                <%= link_to "Link to code", "https://github.com/chris-yoon90/Addressbook", target: "_blank" %>
+            </small>
+          </div>
+          <%= image_tag "addressbook.JPG", size: "600x450", class: "medium-padding centered"%>
+          <p class="small-text">
+            Addressbook application lets users manage their contact info. This was my first personal project to learn web development, so the overall code quality is not amazing, but it helped me to learn about REST structure and MVC architecture. I've done some experimenting with design patterns with this project, and I was able to implement Observer pattern to Model and View classes.
+          </p>
+          <p class="small-text">
+            My initial goal was to make this a CRUD (Create/Read/Update/Delete) app, but I was only able to implement Create, Read and Delete part. There is no plan to implement Update functionality since I can re-make this application with Ruby on Rails much faster than re-learning what I've written in PHP months ago.
+          </p>
+        </div>
+        <div class="project-content">
+            <div class="section-header">
+                <h2 class="anchor" id="gpsglider">BLAST: High Altitude GPS Glider</h2>
+                <small class="links"> 
+                    <%= link_to "Link to project detail", "http://projectlab.engphys.ubc.ca/wp-content/uploads/1205-ENPH459-Presentation-v1.pdf", target: "_blank"%> |
+                    <%= link_to "Link to project report", "https://www.dropbox.com/s/0htnd9r5jcel1sh/Group1205_FinalReport.pdf", target: "_blank" %> |
+                    <%= link_to "Link to presentation video", "https://www.dropbox.com/s/bslrmkymrcrmbio/1205%20Video_1.wmv", target: "_blank" %>
+                </small>
+            </div>
+            <%= image_tag "landingalgorithm.png", size: "500x450", class: "medium-padding centered"%>
+            <p class="small-text">
+                BLAST is a telescope used to gather data on the early history of the universe. The telescope is attached to a weather balloon and sent up to the stratosphere (40km altitude) in Antarctica to avoid any noise or light interference. However during thier third flight, its parachute failed to detach after landing, and strong wind dragged the telescope over 200 km across Antarctica. The telescope was mostly destroyed and valuable data was lost.
+            </p>
+            <p class="small-text">
+                To address this issue, a team of three Engineering Physics students, including myself, designed and assembled a prototype of self-guiding, autonomous GPS glider that may be able to bring back the data before the telescope lands. Just think about it. If somehow we can bring down terabytes of data that has been gathered by BLAST independantly, at least we have the data safe in case the same thing happens in the future BLAST flights!
+            </p>
+            <p class="small-text">
+              Our team successfully built the autonomous guidance system for the glider. Using C#, .NET Micro Framework, we programmed the control algorithm to the FEZ Mini Microcontroller, which is also hooked up to a ISM300F2-C4.1 GPS Module from Inventek Systems. Unfortunately, the glider never flew because the existing motor for the glider did not have enough thrust to carry the electronics with it.
+            </p>
+        </div>
+        <div class="project-content">
+          <div class="section-header">
+            <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
+            <small class="links"><%= link_to "Link to project", "http://shermanthetank.blogspot.ca/", target: "_blank"%> |
+                <%= link_to "Link to the video of final round", "http://www.youtube.com/watch?feature=player_embedded&v=Wrp9FB19lBI", target: "_blank" %>
+            </small>
+          </div>
+          <%= image_tag "sherman.jpg", size: "570x450", class: "medium-padding centered"%>
+          <p class="small-text">
+            Engineering Physics Robotics competition is an event hosted by Engineering Physics department in UBC every year for second year students. Students go through an intensive 13-week summer course to learn about modern technics for designing and fabricating robots. At the end of the course, each team has a chance to compete with other teams with the robot that they have built.
+          </p>
+          <p class="small-text">
+            The competition in 2010 was to build a tape-following autonomous racing robot that can avoid obstacles as they race others. Our robot "Sherman the Tank" successfully beat other robots in the race and advanced to the final round. We were beaten by other team in the final round and obtained second place (14 teams participated that year). Please take a look at the video of the final round, as it was a very intense race!
+          </p>
+        </div>
+    </div>
+  </div>
+  </div>

@@ -1,39 +1,12 @@
- <div class="row"> 
-  <div class="col-md-12">
-    <div class="jumbotron-white">
-      <div class="section-header">
-        <h1 class="medium-heading">Current Project</h1>
-      </div>
-        <figure class="pull-right">
-          <%= image_tag "smartcity.png", size: "400x250", class: "small-padding" %>
-          <figcaption class="extra-small-text">Image from SimCity-EA</figcaption>
-        </figure>
-        <p class="medium-text">
-          What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
-        </p>
-        <p class="medium-text">
-          To find out, a team of Engineering Physics students in UBC will build an application that can find compelling relationships between Twitter tweet sentiment and various city-data. 
-        </p>
-        <p class="medium-text">
-          This project is sponsored by UBC MAGIC Lab as part of their smart city projects.
-        </p>
-        <p class="large-margin">
-         <%= link_to "Go to Smart City Project", "https://github.com/ubc-magic", class: "btn btn-lg btn-primary", target: "_blank" %>
-         </p>
-    </div>
-    </div>
-</div>
-
-  <div class="row">
+<div class="row">
     <div class="col-md-3">
-      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="500">
-        <h2>Past Projects</h2>
+      <div id="side-nav" class="sidebar" data-spy="affix" >
+        <h2>Work Experience</h2>
         <ul class="nav sidenav">
-          <li><%= link_to "Crawljax", "#crawljax" %></li>
-          <li><%= link_to "Sentiment Analysis Mashup", "#sentiment" %></li>
-          <li><%= link_to "Address Book Web Application", "#addressbook" %></li>
-          <li><%= link_to "High Altitude GPS Glider", "#gpsglider" %></li>
-          <li><%= link_to "Roboracer", "#roboracer" %></li>
+          <li><%= link_to "Global Relay", "#globalrelay" %></li>
+          <li><%= link_to "Sierra Wireless Inc.", "#sierrawireless" %></li>
+          <li><%= link_to "NTT Corporation", "#ntt" %></li>
+          <li><%= link_to "MDA Corporation", "#mda" %></li>
         </ul>
       </div>
     </div>
@@ -41,93 +14,77 @@
       <div class="jumbotron-white">
         <div class="project-content">
             <div class="section-header">
-                <h2 class="anchor" id="crawljax"> Crawljax </h2>
-                <small class="links">
-                    <%= link_to "Link to project", "http://crawljax.com/", target: "_blank" %>
+                <h2 class="anchor" id="globalrelay"> Global Relay </h2>
+                <small class="small-text">
+                    Java-Developer <span class="pull-right italic">May 2013 - August 2013</span>
                 </small>
             </div>
             <p class= "small-text"> 
-            Craljax is an open source, web-crawling tool written in Java for crawling and testing modern web applications. It creates a state-flow diagram of the DOM states and the events that causes the transitions between the states. 
+            At Global Relay, I was working as a Java Developer in a team developing General Authentication Service (GAS). GAS is THE gateway to different services provided by the company and it administers the access rights as well as the security of the users.
             </p>
             <p class="small-text">
-                As my final project for a Software Engineering course in UBC, I've contribute to the project with a team of four fellow students. Using agile development practices such as TDD, user stories and sprint planning, we've successfully fixed two issues:
-            </p>
-                <ul class="small-text">
-                    <li><%= link_to "Issue #135: ", "https://github.com/crawljax/crawljax/issues/135", target: "_blank" %> Convert some configurations to Xpath. </li>
-                    <li><%= link_to "Issue #151: ", "https://github.com/crawljax/crawljax/issues/151", target: "_blank" %>CrawlElement and TagElement should be refactored to one class.</li>
-                </ul>
+                I designed and maintained the automation framework including smoke, regression, sanity and unit testing, wrote new automation for new user stories, maintained scripts (python, bash) used in Atlassian Bamboo and Jenkins for automated builds and tests, and fix bugs. 
+            </p>  
             <p class="small-text">
-                Our Pull Request for Issue #135 has been merged to master but unfortunately for Issue #151, someone else submitted a pull request before us and ours did not get accepted.
-            </p>   
+                My main accomplishment while working in Global Relay was that I redesigned the architecture of the existing automation tests. With the use of PageFactory pattern and Object Oriented Programming practices, I refactored the automation code containing over 200 tests to be more readable, maintainable and modular, ultimately reducing the running time of the tests by 30%.
+            </p> 
         </div>
         <div class="project-content">
           <div class="section-header">
-            <h2 class="anchor" id="sentiment">Sentiment Analysis Mashup</h2>
-            <small class="links">
-                <%= link_to "Link to code", "https://github.com/chris-yoon90/sentiment_analysis", target: "_blank"%>
+            <h2 class="anchor" id="sierrawireless">Sierra Wireless Inc.</h2>
+            <small class="small-text">
+                Software Test Developer <span class="pull-right italic">May 2012 - December 2012</span>
             </small>
           </div>
-          <%= image_tag("sentiment_analysis_img.jpg", size: "600x450", class: "medium-padding centered")%>
           <p class="small-text">
-            This is a quick mashup application I've made with <%= link_to "colinmleung", "https://github.com/colinmleung", target: "_blank"%> to analyze reddit and twitter posts based on their sentiment. For example, a user can type in a keyword to a search box and the application will return the first nine results from Reddit or Twitter relating to the keyword. But that's not all. The web application is hooked up to a sentiment analysis API that can analyze the content and give it a score based on their sentiment.
+            At Sierra Wireless, I was working as a Software Test Developer responsible for running manual and automated tests on wireless modules.Their various modules such as AirCard USB modems and Mobile Hotspots<sup>[1]</sup> and AirPrime embedded modules help people to stay connected from virtually anywhere, anytime.
           </p>
           <p class="small-text">
-            The application used to work for both Reddit and Twitter, but after Twitter's API change to v1.1, it will not work anymore because Twitter API needs: <%= link_to '"every request to the API to be authenticated"', "https://dev.twitter.com/blog/changes-coming-to-twitter-api", target: "_blank"%> (dated August, 2012). However, the application should still work with Reddit.
+            My job was to investigate various ways to break software and hardware components of wireless modules to ensure the quality and the user experience of various modules. I was also automating tests for web applications used by the AirCard Mobile Hotspots using Selenium and TestNG to remove unnecessary repetition and to increase the efficiency of testing process.
           </p>
           <p class="small-text">
-            I've attempted, a few months back, to re-write this application in Ruby on Rails and improve the UI design but I've been busy with work, school and other projects. Hopefully, I'll get to work on it sometime later. If you are interested, here's a link to the new code using Rails 3: <%= link_to "New_sentiment_analysis", "https://github.com/chris-yoon90/new_sentiment_analysis", target: "_blank" %>
+            My main accomplishment in Sierra Wireless was that I've developed an API for real-time status loggin system to allow smarter debugging of automation code.
+          </p>
+          <p class="small-text">
+          </p>
+          <p class="extra-small-text">
+          [1] - As of April 2, 2013, Sierra Wireless Aircard business has been acquired by Netgear
           </p>
 
         </div>
         <div class="project-content">
           <div class="section-header">
-            <h2 class="anchor" id="addressbook">Address Book Web Application</h2>
-            <small class="links"> 
-                <%= link_to "Link to code", "https://github.com/chris-yoon90/Addressbook", target: "_blank" %>
+            <h2 class="anchor" id="ntt">NTT Corporation</h2>
+            <small class="small-text"> 
+                Lightwave Circuit Researcher / Software Developer <span class="pull-right italic">May 2011 - August 2011</span>
             </small>
           </div>
-          <%= image_tag "addressbook.JPG", size: "600x450", class: "medium-padding centered"%>
           <p class="small-text">
-            Addressbook application lets users manage their contact info. This was my first personal project to learn web development, so the overall code quality is not amazing, but it helped me to learn about REST structure and MVC architecture. I've done some experimenting with design patterns with this project, and I was able to implement Observer pattern to Model and View classes.
+            I had a rare opportunity to work as a Lightwave Circuit Researcher at NTT Photonics Laboratories located in Kanagawa, Japan. NTT is one of the key players in telecommunication industry in the world. In their Photonics Laboratories they research and develop optical devices including photonic semiconductors, photonic integrated circuits and new phonic materials and processing technology.
           </p>
           <p class="small-text">
-            My initial goal was to make this a CRUD (Create/Read/Update/Delete) app, but I was only able to implement Create, Read and Delete part. There is no plan to implement Update functionality since I can re-make this application with Ruby on Rails much faster than re-learning what I've written in PHP months ago.
+            My main responsibility was to take various measurements of Planar Lightwave Circuits (PLCs) using lab equipment such as Optical Spectrum Analyzer, ASE light source and optical switch.
+          </p>
+          <p class="small-text">
+            I also developed data visual analytics tools using C++ and various open source toolkits such as FLTK and ALGLIB. These tools ran useful mathematical analyses on large data files containing raw data from waveguide measurements.
           </p>
         </div>
         <div class="project-content">
             <div class="section-header">
-                <h2 class="anchor" id="gpsglider">BLAST: High Altitude GPS Glider</h2>
-                <small class="links"> 
-                    <%= link_to "Link to project detail", "http://projectlab.engphys.ubc.ca/wp-content/uploads/1205-ENPH459-Presentation-v1.pdf", target: "_blank"%> |
-                    <%= link_to "Link to project report", "https://www.dropbox.com/s/0htnd9r5jcel1sh/Group1205_FinalReport.pdf", target: "_blank" %> |
-                    <%= link_to "Link to presentation video", "https://www.dropbox.com/s/bslrmkymrcrmbio/1205%20Video_1.wmv", target: "_blank" %>
+                <h2 class="anchor" id="mda">MDA Corporation</h2>
+                <small class="small-text"> 
+                    System Test Engineer <span class="pull-right italic">January 2010 - April 2010</span>
                 </small>
             </div>
-            <%= image_tag "landingalgorithm.png", size: "500x450", class: "medium-padding centered"%>
             <p class="small-text">
-                BLAST is a telescope used to gather data on the early history of the universe. The telescope is attached to a weather balloon and sent up to the stratosphere (40km altitude) in Antarctica to avoid any noise or light interference. However during thier third flight, its parachute failed to detach after landing, and strong wind dragged the telescope over 200 km across Antarctica. The telescope was mostly destroyed and valuable data was lost.
+              At MDA Corporation, I worked as a System Test Engineer for a small team developing a web-enabled database management system called AIRNAV for storing aeronautical data. It supports a detailed, accurate and flight inspected database of airports and navigational facilities used for designing instrument flight procedures for aircraft pilots.
             </p>
             <p class="small-text">
-                To address this issue, a team of three Engineering Physics students, including myself, designed and assembled a prototype of self-guiding, autonomous GPS glider that may be able to bring back the data before the telescope lands. Just think about it. If somehow we can bring down terabytes of data that has been gathered by BLAST independantly, at least we have the data safe in case the same thing happens in the future BLAST flights!
+               I designed and wrote various test procedures and executed them daily to verify the quality of the application. I also maintained my team's database that contains test data using Oracle SQL developer.
             </p>
             <p class="small-text">
-              Our team successfully built the autonomous guidance system for the glider. Using C#, .NET Micro Framework, we programmed the control algorithm to the FEZ Mini Microcontroller, which is also hooked up to a ISM300F2-C4.1 GPS Module from Inventek Systems. Unfortunately, the glider never flew because the existing motor for the glider did not have enough thrust to carry the electronics with it.
+              My main accomplishment here was that I designed and wrote a detailed workflow regression test procedure that verifies the core functionalities of the application.
             </p>
-        </div>
-        <div class="project-content">
-          <div class="section-header">
-            <h2 class="anchor" id="roboracer">2010 Engineering Physics Robotics Competition: Roboracer</h2>
-            <small class="links"><%= link_to "Link to project", "http://shermanthetank.blogspot.ca/", target: "_blank"%> |
-                <%= link_to "Link to the video of final round", "http://www.youtube.com/watch?feature=player_embedded&v=Wrp9FB19lBI", target: "_blank" %>
-            </small>
-          </div>
-          <%= image_tag "sherman.jpg", size: "570x450", class: "medium-padding centered"%>
-          <p class="small-text">
-            Engineering Physics Robotics competition is an event hosted by Engineering Physics department in UBC every year for second year students. Students go through an intensive 13-week summer course to learn about modern technics for designing and fabricating robots. At the end of the course, each team has a chance to compete with other teams with the robot that they have built.
-          </p>
-          <p class="small-text">
-            The competition in 2010 was to build a tape-following autonomous racing robot that can avoid obstacles as they race others. Our robot "Sherman the Tank" successfully beat other robots in the race and advanced to the final round. We were beaten by other team in the final round and obtained second place (14 teams participated that year). Please take a look at the video of the final round, as it was a very intense race!
-          </p>
         </div>
     </div>
   </div>
