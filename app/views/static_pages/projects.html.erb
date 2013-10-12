@@ -8,17 +8,25 @@
           <%= image_tag "vancouver.jpg", size: "400x250", class: "small-padding" %>
           <figcaption class="extra-small-text">Vancouver Science World</figcaption>
         </figure>
-        <p class="medium-text">
+        <p class="small-text">
           What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
         </p>
-        <p class="medium-text">
+        <p class="small-text">
           To find out, a team of Engineering Physics students in UBC will build an application that can find compelling relationships between Twitter tweet sentiment and various city-data. 
         </p>
-        <p class="medium-text">
-          This project is sponsored by UBC MAGIC Lab as part of their smart city projects.
+        <p class="small-text">
+          There are 3 components of this project:
+          <ul class="small-text">
+            <li>Back-end processing unit built in Java using MOA for data analysis.</li>
+            <li>Front-end web application built with node.js and data visualization with d3.js.</li>
+            <li>User interaction layer using RED framework and Ubi displays.</li>
+          </ul>
+        </p>
+        <p class="small-text">
+          This project is sponsored by UBC MAGIC Lab as part of their <%= link_to "smart city", "https://github.com/ubc-magic", target: "_blank" %> projects.
         </p>
         <p class="large-margin">
-         <%= link_to "Go to Smart City Project", "https://github.com/ubc-magic", class: "btn btn-lg btn-primary", target: "_blank" %>
+         <%= link_to "Go to project github", "https://github.com/ubc-magic-students/enph479-2013", class: "btn btn-lg btn-primary", target: "_blank" %>
          </p>
     </div>
     </div>
@@ -26,7 +34,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="500">
+      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="530">
         <h2>Past Projects</h2>
         <ul class="nav sidenav">
           <li><%= link_to "Crawljax", "#crawljax" %></li>
