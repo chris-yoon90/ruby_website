@@ -4,29 +4,17 @@
       <div class="section-header">
         <h1 class="medium-heading">Current Project</h1>
       </div>
-        <figure class="pull-right">
-          <%= image_tag "vancouver.jpg", size: "400x250", class: "small-padding" %>
-          <figcaption class="extra-small-text">Vancouver Science World</figcaption>
-        </figure>
         <p class="small-text">
-          What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
+          I'm currently building a real-time web application that determines the most frequently used hashtags in Twitter and displaying them on a map in real-time. This project started off as part of my final capstone project <%= link_to "Tweet Sentiment VS Weather", "#sentimentVSweather" %> in attempt to build an application to detect events using twitter feeds.
         </p>
         <p class="small-text">
-          To find out, a team of Engineering Physics students in UBC will build an application that can find compelling relationships between Twitter tweet sentiment and various city-data. 
+        Technology stack used will be node.js, mongoDB and angularJS.
         </p>
         <p class="small-text">
-          There are 3 components of this project:
-          <ul class="small-text">
-            <li>Back-end processing unit built in Java using MOA for data analysis.</li>
-            <li>Front-end web application built with node.js and data visualization with d3.js.</li>
-            <li>User interaction layer using RED framework and Ubi displays.</li>
-          </ul>
-        </p>
-        <p class="small-text">
-          This project is sponsored by UBC MAGIC Lab as part of their <%= link_to "smart city", "https://github.com/ubc-magic", target: "_blank" %> projects.
+          For the time being, this project will be on ubc-magic-students repo as this was the original repository of this project. In time, I will clone the project to my own repository chris-yoon90.
         </p>
         <p class="large-margin">
-         <%= link_to "Go to project github", "https://github.com/ubc-magic-students/enph479-2013", class: "btn btn-lg btn-primary", target: "_blank" %>
+         <%= link_to "Go to project github", "https://github.com/ubc-magic-students/enph479-2013/tree/master/adhocEvents", class: "btn btn-lg btn-primary", target: "_blank" %>
          </p>
     </div>
     </div>
@@ -37,6 +25,7 @@
       <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="530">
         <h2>Past Projects</h2>
         <ul class="nav sidenav">
+          <li><%= link_to "Tweet Sentiment VS Weather", "#sentimentVSweather" %></li>
           <li><%= link_to "Crawljax", "#crawljax" %></li>
           <li><%= link_to "Sentiment Analysis Mashup", "#sentiment" %></li>
           <li><%= link_to "Address Book Web Application", "#addressbook" %></li>
@@ -49,11 +38,39 @@
       <div class="jumbotron-white">
         <div class="project-content">
             <div class="section-header">
+                <h2 class="anchor" id="sentimentVSweather"> Tweet Sentiment VS Weather application </h2>
+                <small class="links">
+                    <%= link_to "Link to code", "https://github.com/ubc-magic-students/enph479-2013", target: "_blank" %>
+                </small>
+            </div>
+            <p class= "small-text"> 
+            What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
+            </p>
+            <p class="small-text">
+                To find out, a team of Engineering Physics students in UBC built a realtime web application that can find compelling relationship between Twitter tweet sentiment and weather pattern.
+            </p>
+            <p class="small-text">
+              There are 2 components of this project:
+              <ul class="small-text">
+                <li>Back-end processing unit built in Java for classification of tweets based on location.</li>
+                <li>Front-end web application built with node.js and data visualization with d3.js.</li>
+              </ul>
+            </p>
+            <p class="small-text">
+                This project is sponsored by UBC MAGIC Lab as part of their <%= link_to "smart city", "https://github.com/ubc-magic", target: "_blank" %> projects.
+            </p>   
+        </div>
+        <div class="project-content">
+            <div class="section-header">
                 <h2 class="anchor" id="crawljax"> Crawljax </h2>
                 <small class="links">
                     <%= link_to "Link to project", "http://crawljax.com/", target: "_blank" %>
                 </small>
             </div>
+            <figure class="pull-right">
+              <%= image_tag "crawljax.png", size: "400x250", class: "small-padding" %>
+              <figcaption class="extra-small-text">State-flow diagram. From: http://crawljax.com/</figcaption>
+            </figure>
             <p class= "small-text"> 
             Craljax is an open source, web-crawling tool written in Java for crawling and testing modern web applications. It creates a state-flow diagram of the DOM states and the events that causes the transitions between the states. 
             </p>
