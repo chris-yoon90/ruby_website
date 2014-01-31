@@ -4,7 +4,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'bootstrap-sass', :git => 'git://github.com/chris-yoon90/bootstrap-sass', :branch => 'master'
 
 # Use sqlite3 as the database for Active Record in development environment
 group :development do 
