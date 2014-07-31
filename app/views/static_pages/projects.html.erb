@@ -1,4 +1,4 @@
- <div class="row"> 
+<!--  <div class="row"> 
   <div class="col-xs-12">
     <div class="jumbotron-white">
       <div class="section-header">
@@ -21,13 +21,14 @@
          </p>
     </div>
     </div>
-</div>
+</div> -->
 
   <div class="row">
     <div class="col-xs-3">
-      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="530">
+      <div id="side-nav" class="sidebar" data-spy="affix" data-offset-top="50">
         <h2>Past Projects</h2>
         <ul class="nav sidenav">
+          <li><%= link_to "A Map of Frequently Used Hashtags", "#hashtagMap" %></li>
           <li><%= link_to "Tweet Sentiment VS Weather", "#sentimentVSweather" %></li>
           <li><%= link_to "Crawljax", "#crawljax" %></li>
           <li><%= link_to "Sentiment Analysis Mashup", "#sentiment" %></li>
@@ -41,16 +42,27 @@
       <div class="jumbotron-white">
         <div class="project-content">
             <div class="section-header">
+                <h2 class="anchor" id="hashtagMap"> A Map of Frequently Used Hashtags </h2>
+                <small class="links">
+                    <%= link_to "Link to code", "https://github.com/chris-yoon90/hashtag_location_app", target: "_blank" %> 
+                </small>
+            </div>
+            <p class= "small-text"> 
+              A real-time web application that determines the most frequently used hashtags in Twitter and displaying them on a map in real-time. This project started off as part of my final capstone project <%= link_to "Tweet Sentiment VS Weather", "#sentimentVSweather" %> in attempt to build an application to detect events using twitter feeds.
+            </p>
+        </div>
+        <div class="project-content">
+            <div class="section-header">
                 <h2 class="anchor" id="sentimentVSweather"> Tweet Sentiment VS Weather application </h2>
                 <small class="links">
-                    <%= link_to "Link to code", "https://github.com/ubc-magic-students/enph479-2013", target: "_blank" %>
+                    <%= link_to "Link to code", "https://github.com/ubc-magic-students/enph479-2013", target: "_blank" %> | <%= link_to "Link to project document", "https://www.dropbox.com/s/eac03inarkrg5mm/1371_What_Makes_Vancouverites_Sad_Final_Report.pdf", target: "_blank" %>
                 </small>
             </div>
             <p class= "small-text"> 
             What makes Vancouverites sad? Is it rainy weather? Rush hour traffic? Canucks losing the Stanley Cup final?
             </p>
             <p class="small-text">
-                To find out, a team of Engineering Physics students in UBC built a realtime web application that can find compelling relationship between Twitter tweet sentiment and weather pattern.
+                We built a realtime web application compares Twitter tweet sentiment and weather pattern to deduce the relationship between the two data.
             </p>
             <p class="small-text">
               There are 2 components of this project:
@@ -60,7 +72,7 @@
               </ul>
             </p>
             <p class="small-text">
-                This project is sponsored by UBC MAGIC Lab as part of their <%= link_to "smart city", "https://github.com/ubc-magic", target: "_blank" %> projects.
+                This project was sponsored by UBC MAGIC Lab as part of their <%= link_to "smart city", "https://github.com/ubc-magic", target: "_blank" %> projects.
             </p>   
         </div>
         <div class="project-content">
@@ -103,7 +115,7 @@
             The application used to work for both Reddit and Twitter, but after Twitter's API change to v1.1, it will not work anymore because Twitter API needs: <%= link_to '"every request to the API to be authenticated"', "https://dev.twitter.com/blog/changes-coming-to-twitter-api", target: "_blank"%> (dated August, 2012). However, the application should still work with Reddit.
           </p>
           <p class="small-text">
-            I've attempted, a few months back, to re-write this application in Ruby on Rails and improve the UI design but I've been busy with work, school and other projects. Hopefully, I'll get to work on it sometime later. If you are interested, here's a link to the new code using Rails 3: <%= link_to "New_sentiment_analysis", "https://github.com/chris-yoon90/new_sentiment_analysis", target: "_blank" %>
+            Here's a link to the new code using Rails 3: <%= link_to "New_sentiment_analysis", "https://github.com/chris-yoon90/new_sentiment_analysis", target: "_blank" %>
           </p>
 
         </div>
@@ -127,7 +139,7 @@
                 <h2 class="anchor" id="gpsglider">BLAST: High Altitude GPS Glider</h2>
                 <small class="links"> 
                     <%= link_to "Link to project detail", "http://projectlab.engphys.ubc.ca/wp-content/uploads/1205-ENPH459-Presentation-v1.pdf", target: "_blank"%> |
-                    <%= link_to "Link to project report", "https://www.dropbox.com/s/0htnd9r5jcel1sh/Group1205_FinalReport.pdf", target: "_blank" %> |
+                    <%= link_to "Link to project report", "https://www.dropbox.com/s/p6guphc79ffrtg4/Group1205_FinalReport.pdf", target: "_blank" %> |
                     <%= link_to "Link to presentation video", "https://www.dropbox.com/s/bslrmkymrcrmbio/1205%20Video_1.wmv", target: "_blank" %>
                 </small>
             </div>
